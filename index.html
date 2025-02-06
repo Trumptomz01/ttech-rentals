@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Service</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <link rel="stylesheet" href="./src/website.css">
+    <link rel="stylesheet" href="./src/footer.css">
+    <!-- <link rel="stylesheet" href="./src/media-queries.css"> -->
+</head>
+<body>
+    <nav class="sidebar-nav">
+        <ul  class="sidebar">
+            <li onclick=closeSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#8dd62d"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Cars</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">signUp</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>  
+    <header class="welcome-video">
+        <video class="video" autoplay muted loop>
+            <source src="original-audi car video.mp4" type="video/mp4">
+        </video>
+    <main class="">
+        <nav class="nav1">
+            <ul class="navbar">
+                <li class="name"><a class="rent" href="#"><h1>T-TECH AUTOS</h1></a></li>
+                <li class="hideOnMobile"><a href="#">Home</a></li>
+                <li class="hideOnMobile"><a href="#">Locations</a></li>
+                <li class="hideOnMobile" ><a href="#">vehicles</a></li>
+                <li class="hideOnMobile"><a href="#">About</a></li>
+                <li id="login" class="hideOnMobile"><a target="_blank" rel="noreferrer" href="/pages/signup.html">SignUp</a></li>
+                <li id="login"  class="hideOnMobile"><a rel="noreferrer"  href="/pages/login.html">Login</a></li>
+                <li class="menubutton" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="28px" fill="#8dd62d"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+    </main>
+        <div class="video-overlay">
+            <h1>Welcome to <span class="green">T-TECH AUTOS</span> Services</h1>
+            <h3>Rent your favorite cars today!</h3>
+        </div>
+        <div class="video-overlay-2">
+            <div class="first-foot-video-line"><p>Millions <br> Trust Us</p><svg class="svg" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#8dd62d"><path d="M0-240v-63q0-43 44-70t116-27q13 0 25 .5t23 2.5q-14 21-21 44t-7 48v65H0Zm240 0v-65q0-32 17.5-58.5T307-410q32-20 76.5-30t96.5-10q53 0 97.5 10t76.5 30q32 20 49 46.5t17 58.5v65H240Zm540 0v-65q0-26-6.5-49T754-397q11-2 22.5-2.5t23.5-.5q72 0 116 26.5t44 70.5v63H780Zm-455-80h311q-10-20-55.5-35T480-370q-55 0-100.5 15T325-320ZM160-440q-33 0-56.5-23.5T80-520q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T160-440Zm640 0q-33 0-56.5-23.5T720-520q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T800-440Zm-320-40q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-600q0 50-34.5 85T480-480Zm0-80q17 0 28.5-11.5T520-600q0-17-11.5-28.5T480-640q-17 0-28.5 11.5T440-600q0 17 11.5 28.5T480-560Zm1 240Zm-1-280Z"/></svg></div>
+            <div class="foot-video-line"><p>1,000+<br>vehicles</p><svg class="svg" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#8dd62d"><path d="M260-320q25 0 42.5-17.5T320-380q0-25-17.5-42.5T260-440q-25 0-42.5 17.5T200-380q0 25 17.5 42.5T260-320Zm360 0q20 0 36-12t21-31q-20-4-38-13.5T606-401l-25-25q-10 8-15.5 20t-5.5 26q0 25 17.5 42.5T620-320Zm-460 40v-200 200Zm40 80v40q0 17-11.5 28.5T160-120h-40q-17 0-28.5-11.5T80-160v-320l84-240q6-18 21.5-29t34.5-11h140v55q0 6 .5 12.5T362-680H234l-42 120h255l80 80H160v200h560v-81q22-2 42.5-11t37.5-25v237q0 17-11.5 28.5T760-120h-40q-17 0-28.5-11.5T680-160v-40H200Zm400-520q17 0 28.5-11.5T640-760q0-17-11.5-28.5T600-800q-17 0-28.5 11.5T560-760q0 17 11.5 28.5T600-720Zm62 262L458-662q-8-8-13-19.5t-5-23.5v-155q0-25 17.5-42.5T500-920h155q12 0 23.5 5t19.5 13l204 204q17 17 17 42.5T902-613L747-458q-17 17-42.5 17T662-458Zm43-70 127-127-185-185H520v127l185 185Zm-29-156Z"/></svg></div>
+            <div class="foot-video-line"><p>Rent With<br>Confidence</p><svg class="svg" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#8dd62d"><path d="M268-240 42-466l57-56 170 170 56 56-57 56Zm226 0L268-466l56-57 170 170 368-368 56 57-424 424Zm0-226-57-56 198-198 57 56-198 198Z"/></svg></div>
+        </div>
+            <!-- <p>Explore a wide range of cars at unbeatable prices!</p> -->
+    </header>
+    <section class="first-section">
+        <div class="gridhome">
+            <div class="grid1">
+                <div class="welcome-text">
+                    <h1> Elevate Your Travel <br>Experience</h1>
+                </div>
+                <div class="mobile-fleet-btn"><button>EXPLORE FLEET</button></div>
+                <div class="toyota-bg">
+                    <img  class="img" src="public/2023_toyota_corolla.png" alt="">
+                    <span class="text-overlay" >Toyota</span>
+                </div>
+                <div class="lambo-bg">
+                        <img class="img" src="public/arad-razaghi-yX4MG-oz6mE-unsplash.jpg" alt="">
+                        <span class="text-overlay" >Lexus</span>
+                </div>
+            </div>
+            <div class="benz-bg">
+                <div class="benzbg">
+                    <img class="benz" src="public/i-m-zion-biS8sSPP_js-unsplash.jpg" alt="">
+                    <span class="text-overlay">Lamborghini</span>
+                </div>    
+            </div>
+        </div>
+    </section>
+    <div class="action-div">
+        <div>
+            <h2>Luxury Meets <br> Performance</h2>
+        </div>
+        <div class="para">
+            <p class="main">Discover the perfect solution for all your business transportation needs, indulge in a luxurious wedding
+               gateway experience,<br>or embark on an unforgettable thrill-experience excellence with our unmatched service. 
+            </p>
+        </div>
+        <div class="book-btn"><button class="btn">RENT CAR</button></div>
+    </div>
+    
+    <hr>
+
+    <div class="fleet-msg-div">
+        <div><h1>Our Vehicle Fleet</h1></div>
+        <div class="para-2"><p  class="main">We provide our customers with the most incredible driving emotions. <br>
+        That's why we have only world class cars in our fleet.</p></div>
+    </div>
+    <!-- <hr> -->
+    <section class="newsletter">
+        <div>
+            <h2> Join over 2000+ Subscribers on Our Newsletter</h2>
+            <p>Get exclusive deals, discounts, and travel tips delivered to your inbox.</p>
+        </div>
+        <form class="Subscribe-div">
+        <div class="input-div">
+            <span class="icon"><i class="fa-solid fa-inbox " style="color: #a9a4a4;"></span></i>
+            <input type="email" placeholder="Enter your email" required>
+            <button class="Subscribe" type="submit">Subscribe</button>
+        </div>
+        </form>
+    </section>
+    <footer>      
+        <div class="main-footer">
+            <div class="footer0">
+                <h2>T-TECH AUTOS</h2>
+                <h3>Driven to provide seamless car rental <br> experiences for every journey.</h3>
+                <p>T-Tech Autos, 2025</p>
+            </div>
+            <div class="side-footer">
+                <div class="footer1">
+                    <h3>COMPANY</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer2">
+                    <h3>LEGAL</h3>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+                <div class="footer3">
+                    <h3>RESOURCES</h3>
+                    <ul>
+                        <li><a href="#">Press Conferences</a></li>
+                        <li><a href="#">Papers</a></li>
+                        <li><a href="#">Documentation</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="right-reserved"><p>&COPY; 2025 T-Tech Autos. All Right Reserved </p></div>
+            <div class="socials-icons">
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-linkedin" ></i>
+                <i class="fa-brands fa-facebook" ></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
