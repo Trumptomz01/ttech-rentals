@@ -4,6 +4,9 @@ html{
 }
 body{
     height: 100%;
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;    
     color: #fff;
     margin: 0;
     display: flex;
@@ -14,6 +17,11 @@ body{
     background-position: center;
     background-repeat: no-repeat;
 
+}
+div h1{
+    margin: 10px;
+    font-size: 20px;
+    margin-top: 0;
 }
 .container{
     display: flex;
@@ -29,21 +37,10 @@ body{
     text-align: center;
     flex-direction: column;
 }
-.h1{
-    display: flex;
-    justify-content: start;
-    margin: 15px;
-    margin-top: 0;
-    margin-left: -10px;
-    color:#8dd62d;
-}
-.h1 h1{
-    font-size: 13px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-@media (min-width:760px) {
-
-
+@media (max-width:700px) {
+    .container{
+        width: 70%;
+    }
 }
 .form-img{
     width: 50px;
@@ -60,10 +57,12 @@ body{
 .input:focus{
     border: 1px solid #8dd62d;
 }
+input{
+    /* width: 100%; */
+}
 .input{
     display:block;
     margin-top: 20px;
-    width: 100%;
     color: #fff;
     padding: 12px;
     background-color: #000;
@@ -74,11 +73,6 @@ body{
 }
 .nav1 .navbar .black-a{
     color: #000;
-}
- .rent{
-    color: #8dd62d;
-    font-size: 9px;
-    
 }
 input:focus{
     background-color: #000;
@@ -112,7 +106,6 @@ input:nth-child(5){
     text-align: center;
     align-items: center;
     border: none;
-    font-family: "poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -123,4 +116,7 @@ input:nth-child(5){
 h1{
     margin: 0;
     font-size: 20px;
+}
+.acc{
+    margin-top: 20px;
 }
