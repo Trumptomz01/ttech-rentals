@@ -1,61 +1,52 @@
 
+html{
+    height: 100%;
+}
 body{
+    height: 100%;
+    color: #fff;
+    margin: 0;
     display: flex;
-    /* background-image: url('code-pic/taras-chernus-zBjGcsrj2ho-unsplash.jpg'); */
-    background-repeat: no-repeat;
-    background:black;
-    /* object-position: center; */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    background-image: url('../public/patrik-storm-alstra-pictures-rnlddg_150k-unsplash.jpg'); 
+    background-size: cover;
     background-position: center;
-    color: white;
-    justify-content: center;
-    object-fit: cover;
-    align-items: center;
+    background-repeat: no-repeat;
+
+}
+.container{
+    display: flex;
+    padding: 20px;
     margin: auto;
-    font-size: 14px;
-    overflow: hidden;
-    height: 100vh;
-    position: relative;
-    font-family: "poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
+    border-radius: 10px;
+    width: 600px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background: rgba(24, 24, 24, 0.8); 
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    text-align: center;
+    flex-direction: column;
 }
 .h1{
-    position: absolute;
-    top: 10px;
-    left: 10px ;
+    display: flex;
+    justify-content: start;
+    margin: 15px;
+    margin-top: 0;
+    margin-left: -10px;
     color:#8dd62d;
+}
+.h1 h1{
+    font-size: 13px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #error_message{
     font-size: 10px;
 }
 @media (min-width:760px) {
-    .container{
-        width: 80%;
-    }
-}
-span{
-    color:rgb(200, 0, 0);
-    margin-top: 10px;
-    padding: 5px;
-    border-radius: 15px;
 
-    font-weight: 600;
-}
-.container{
-    display: flex;
-    /* outline: 2px solid red; */
-    background:#181818;
-    flex-direction: column;
-    border-radius:25px;
-    text-align: center;
-    overflow-x: hidden;
-    width: 500px;
-    backdrop-filter: blur(10px);
-    /* margin: 50px; */
-    /* transform: translate(-50%, -50%); */
-    /* left: 50%; */
-    justify-content: center;
-    align-content: center;
+
 }
 .form-img{
     width: 50px;
@@ -102,7 +93,7 @@ input:nth-child(5){
     align-items: center;
     text-align: center;
 }
-.btn{
+.submit-btn{
     background-color: #8dd62d;
     display: block;
     color: black;
@@ -119,7 +110,7 @@ input:nth-child(5){
     font-weight: 400;
     font-style: normal;
 }
-.btn:hover{
+.submit-btn:hover{
     background:#a4e94b;
     transition: 0.3s;
 }

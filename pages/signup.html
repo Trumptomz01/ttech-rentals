@@ -4,14 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
+    <link rel="stylesheet" href="/src/website.css">
     <link rel="stylesheet" href="/src/signup.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="h1"><h1>T-TECH AUTOS</h1></div>
+    <main class="">
+        <nav class="nav1">
+            <ul class="navbar">
+                <li class="name"><a class="rent" href="#"><h1>T-TECH AUTOS</h1></a></li>
+                <li class="hideOnMobile"><a href="../index.html">Home</a></li>
+                <li class="hideOnMobile"><a href="#">Locations</a></li>
+                <li class="hideOnMobile" ><a href="#">vehicles</a></li>
+                <li class="hideOnMobile"><a href="#">About</a></li>
+                <li id="login" class="hideOnMobile"><a target="_blank" rel="noreferrer" href="/pages/signup.html">SignUp</a></li>
+                <li id="login"  class="hideOnMobile"><a rel="noreferrer"  href="/pages/login.html">Login</a></li>
+                <li class="menubutton" onclick = showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="28px" fill="#8dd62d"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+    </main>
     <div class="container">
+        <div class="h1"><h1>T-TECH AUTOS</h1></div>
         <div class="">
             <h1>Create Account</h1>
             <p>Sign up to get started!</p>
@@ -21,10 +36,10 @@
             <input class="input" type="email" name="email" id="email" placeholder="Email" required>
             <input class="input" type="password" name="password" id="password" placeholder="Password" required>
             <input class="input" type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Password" required ><span id="error_message"></span>
-            <input id="submit" class="btn" type="submit" value="Get Started">
+            <input id="submit" class="submit-btn" type="submit" value="Get Started">
         </form>
         <p class="acc">Already have an account? <a target="_blank" class="signup-link" href="login.html">Log In</a></p>
-        <!-- <script src="index.js"></script> -->
     </div>
+    <!-- <script src="index.js"></script> -->
 </body>
 </html>
