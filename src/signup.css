@@ -7,8 +7,8 @@ body{
     color: #fff;
     margin: 0;
     display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */
+    justify-content: center; 
+    align-items: center; 
     background-image: url('../public/patrik-storm-alstra-pictures-rnlddg_150k-unsplash.jpg'); 
     background-size: cover;
     background-position: center;
@@ -41,9 +41,6 @@ body{
     font-size: 13px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-#error_message{
-    font-size: 10px;
-}
 @media (min-width:760px) {
 
 
@@ -59,6 +56,7 @@ body{
     align-content: center;
 
 }
+
 .input:focus{
     border: 1px solid #8dd62d;
 }
@@ -73,6 +71,14 @@ body{
     border: black 2px solid;
     border-radius: 5px;
     /* border: none; */
+}
+.nav1 .navbar .black-a{
+    color: #000;
+}
+ .rent{
+    color: #8dd62d;
+    font-size: 9px;
+    
 }
 input:focus{
     background-color: #000;
