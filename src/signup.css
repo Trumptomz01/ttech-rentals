@@ -57,9 +57,6 @@ div h1{
 .input:focus{
     border: 1px solid #8dd62d;
 }
-input{
-    /* width: 100%; */
-}
 .input{
     display:block;
     margin-top: 20px;
