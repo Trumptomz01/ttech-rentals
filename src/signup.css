@@ -18,7 +18,7 @@ body{
 div h1{
     margin: 10px;
     font-size: 20px;
-    margin-top: 0;
+    margin-top: 10px;
 }
 .container{
     font-family: "Poppins", serif;
@@ -55,9 +55,7 @@ div h1{
 
 }
 
-.input:focus{
-    border: 1px solid #8dd62d;
-}
+
 .input{
     display:block;
     margin-top: 20px;
@@ -65,7 +63,7 @@ div h1{
     padding: 12px;
     background-color: #000;
     width:250px;
-    border: black 2px solid;
+    border: #595858 1px solid;
     border-radius: 5px;
     /* border: none; */
 }
@@ -126,7 +124,26 @@ h1{
     font-family:'poppins' sans-serif;
     font-weight: 200;
     bottom: 0px;
+    margin-top: 5px;
     justify-content: center;
     align-items: center;
     position: absolute;
+}
+@media (max-width:430px) {
+    .input{
+    }
+    body {
+        content: "";
+        backdrop-filter: blur(3px);
+    }
+        a h1{
+        font-size: 13px;
+    }
+    .container{
+        border-radius: 0;
+        width: 100%;
+        box-shadow: none;
+        backdrop-filter: blur(0px);
+        background: none;
+    }
 }
