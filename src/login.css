@@ -2,22 +2,31 @@
     padding: 0;
     margin: 0;
 }
-    body{
-    display:flex;
-    /* overflow: hidden; */
-    background-color: black;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    padding: 20px;
-    position: relative;
-    font-size: 14px;
-    /* color :white; */
-    height:100vh;   
-    font-optical-sizing: auto;
-    font-weight: 100;
-    font-family: "poppins", sans-serif;   
+html{
+    height: 100%;
 
+}
+body{
+    height: 100%;
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;    
+    color: #fff;
+    margin: 0;
+    display: flex;
+    overflow-y:scroll ;
+    justify-content: center; 
+    align-items: center; 
+    background-image: url('../public/patrik-storm-alstra-pictures-rnlddg_150k-unsplash.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.form{
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    text-align: center;
 }
 .svg2{
     margin: none;
@@ -35,20 +44,25 @@
     left: 10px;
 }
 .container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
-    width: 400px;
-    flex-direction: column;
-    /* background: linear-gradient(180deg, black, rgba(102, 60, 60, 0.335)); */
-    color: white;
-    text-align: center;
-    background-color: #181818;
-    padding:5px 20px 20px 20px;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(1.5px);
+    padding: 20px;
+    margin: auto;
     border-radius: 10px;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 6px  rgba(0,0,0,0.6);
-}.sign{
+    width: 600px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background: rgba(23, 23, 23, 0.7); 
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    text-align: center;
+    flex-direction: column;
+}
+.sign{
     margin:10px;
 }
 .sign h1{
@@ -105,13 +119,10 @@ h1{
     width: 23px;
     height: auto;
 }
-p{
-    text-align: center;
-}
 a{
     text-decoration: none;
     font-size: 13px;
-    color:rgb(255, 251, 251);
+    color: white;
 }
 a:hover{
     text-decoration:underline;
@@ -121,6 +132,7 @@ a:hover{
     display: block;
     padding: 8px;
     width:100%;
+    cursor: pointer;
     border-radius:5px;
     border: none;
     margin: auto;
@@ -136,6 +148,7 @@ a:hover{
 button{
     margin: 15px 2px;
     padding: 5px;
+    cursor: pointer;
     width: 100px;
     background:black;
     text-align:  20px start;
@@ -144,12 +157,23 @@ button{
     border-radius: 3px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
-.form a{
+.forgot-password{
     margin-bottom:50px;
 }
 .foot{
-    font-size: 8px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    bottom: 3px;
+    font-size: 10px;
+    font-family:'poppins' sans-serif;
+    font-weight: 200;
+    bottom: 0px;
+    justify-content: center;
+    align-items: center;
     position: absolute;
+}
+.fa-apple{
+    font-size: 17px;
+    margin-right: 2px;
+}
+.fa-google{
+    font-size: 17px;
+    margin-right: 2px;
 }

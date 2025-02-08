@@ -344,7 +344,7 @@ input[type="radio"]:checked + label{
     .first-section{
         background-repeat: no-repeat;
         object-position: center;
-        background-image: url("../code-pic/i-m-zion-biS8sSPP_js-unsplash.jpg");
+        background-image: url("../public/i-m-zion-biS8sSPP_js-unsplash.jpg");
         background-size: cover;
         height: 250px;
         position: relative;
