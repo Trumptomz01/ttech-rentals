@@ -50,10 +50,10 @@ body{
     transform: translate(-50%, -50%);
     display: flex;
     backdrop-filter: blur(1.5px);
-    padding: 20px;
+    padding: 25px;
     margin: auto;
     border-radius: 10px;
-    width: 600px;
+    width: 500px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -67,6 +67,9 @@ body{
 }
 .sign h1{
     margin: 10px;
+    font-family: "poppins" , serif;
+    font-style: normal;
+    font-weight: 400;
 }
 @media (max-width:760px) {
     .container{
@@ -94,13 +97,6 @@ h1{
     width:250px;
     border-radius: 5px;
     border: none;
-}
-.form-img{
-    width: 50px;
-    margin-top: 10px;
-    height: 50px;
-    box-shadow: 0 4px 6px  rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
 }
 .logo{
     width:28px;
@@ -169,11 +165,23 @@ button{
     align-items: center;
     position: absolute;
 }
-.fa-apple{
-    font-size: 17px;
-    margin-right: 2px;
+.signup-text{
+    margin-top: 20px;
 }
-.fa-google{
-    font-size: 17px;
-    margin-right: 2px;
+@media (max-width:430px) {
+    body {
+        content: "";
+        overflow: hidden;
+        backdrop-filter: blur(3px);
+    }
+        a h1{
+        font-size: 13px;
+    }
+    .container{
+        border-radius: 0;
+        width: 100%;
+        box-shadow: none;
+        backdrop-filter: blur(0px);
+        background: none;
+    }
 }
