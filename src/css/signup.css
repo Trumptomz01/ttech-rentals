@@ -9,7 +9,7 @@ body{
     display: flex;
     justify-content: center; 
     align-items: center; 
-    background-image: url('../public/patrik-storm-alstra-pictures-rnlddg_150k-unsplash.jpg'); 
+    background-image:url( /public/images/patrik-storm-alstra-pictures-rnlddg_150k-unsplash.jpg); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
