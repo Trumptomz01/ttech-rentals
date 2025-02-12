@@ -17,5 +17,5 @@ To run this project locally:
 
 1️⃣ **Clone the Repository**  
 ```bash
-git clone https://github.com/Trumptomz01/ttech-autos.git
-cd ttech-autos
+git clone https://github.com/Trumptomz01/ttech-rentals.git
+cd ttech-rentals
