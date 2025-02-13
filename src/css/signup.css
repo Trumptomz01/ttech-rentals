@@ -141,13 +141,10 @@ h1{
 @media (max-width:430px) {
     body {
         content: "";
-        height: auto;
+        overflow: hidden;
         backdrop-filter: blur(3px);
     }
-    html{
-        height: auto;
-    }
-        a h1{
+    a h1{
         font-size: 13px;
     }
     .container{
