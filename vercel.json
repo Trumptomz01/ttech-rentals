@@ -5,6 +5,7 @@
       { "src": "src/js/*.js", "use": "@vercel/static" },
       { "src": "src/css/*.css", "use": "@vercel/static" },
       { "src": "public/images/*", "use": "@vercel/static" },
+      { "src": "public/favicon.ico", "use": "@vercel/static" },
       { "src": "public/videos/*", "use": "@vercel/static" }
     ],
     "routes": [
