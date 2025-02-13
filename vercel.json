@@ -1,8 +1,17 @@
 {
     "version": 2,
+    "public": "public",
     "builds": [
       {
         "src": "index.html",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "pages/**/*",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "src/**/*",
         "use": "@vercel/static"
       }
     ],
@@ -27,17 +36,7 @@
         "src": "/public/(.*)",
         "dest": "/public/$1"
       }
-    ],
-    "static": {
-      "public": "public",
-      "headers": [
-        {
-          "source": "/src/css/(.*)",
-          "headers": [
-            { "key": "Content-Type", "value": "text/css" }
-          ]
-        }
-      ]
-    }
+    ]
   }
+  
   
