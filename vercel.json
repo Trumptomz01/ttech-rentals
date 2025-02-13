@@ -3,7 +3,9 @@
     "builds": [
       { "src": "**/*.html", "use": "@vercel/static" },
       { "src": "src/js/*.js", "use": "@vercel/static" },
-      { "src": "src/css/*.css", "use": "@vercel/static" }
+      { "src": "src/css/*.css", "use": "@vercel/static" },
+      { "src": "public/images/*", "use": "@vercel/static" },
+      { "src": "public/videos/*", "use": "@vercel/static" }
     ],
     "routes": [
       { "src": "/(.*)", "dest": "/$1" }
