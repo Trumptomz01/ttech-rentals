@@ -1,21 +1,8 @@
 {
     "version": 2,
-    "public": "public",
     "builds": [
       {
         "src": "index.html",
-        "use": "@vercel/static"
-      },
-      {
-        "src": "pages/**/*.html",
-        "use": "@vercel/static"
-      },
-      {
-        "src": "src/css/*.css",
-        "use": "@vercel/static"
-      },
-      {
-        "src": "src/js/*.js",
         "use": "@vercel/static"
       }
     ],
@@ -35,8 +22,22 @@
       {
         "src": "/src/js/(.*)",
         "dest": "/src/js/$1"
+      },
+      {
+        "src": "/public/(.*)",
+        "dest": "/public/$1"
       }
-    ]
-}
-  
+    ],
+    "static": {
+      "public": "public",
+      "headers": [
+        {
+          "source": "/src/css/(.*)",
+          "headers": [
+            { "key": "Content-Type", "value": "text/css" }
+          ]
+        }
+      ]
+    }
+  }
   
