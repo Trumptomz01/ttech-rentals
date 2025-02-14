@@ -595,7 +595,6 @@ nav li:first-child{
     flex-wrap: wrap;
     padding: 1.5rem;
     background: #181818;
-    /* border-radius: 10px; */
     gap: 20px;
 }
 
@@ -607,10 +606,6 @@ nav li:first-child{
 .Subscribe-div{
     display: flex;
     gap: 8px;
-    /* flex-wrap: nowrap; */
-    /* min-width: 200px; */
-    /* max-width: 400px;  */
-
 }
 .icon{
     margin: -5px ;
