@@ -7,8 +7,7 @@ body{
     background-repeat: no-repeat;
     background-size:cover;
     color:white;
-    /* overflow-x: hidden; */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Inter', sans-serif; 
 }
 .welcome-video{
     height:100vh;
@@ -37,7 +36,6 @@ body{
     color: #8dd62d;
 }
 .video-overlay{
-    /* background-color: rgba(24, 24, 24, 0.6); */
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 5px;
