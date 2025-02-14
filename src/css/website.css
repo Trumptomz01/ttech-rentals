@@ -92,7 +92,7 @@ video{
     right: 0;
     padding: 20px 10px;
     z-index: 1008;
-    width:300px;
+    width:290px;
     background-color: rgba(12, 7, 3, 0.5);
     box-shadow: -10px 0 7px rgba(0, 0, 0, 0.2);
     backdrop-filter:blur(10px);
@@ -324,13 +324,7 @@ input[type="radio"]:checked + label{
     }
 
 }
-@media(max-width:770px){
-    /* .list-of-fleet input[type="radio"]:checked + label + .tab{
-        grid-template-columns:1fr 1fr;
-        display: grid;
-    } */
 
-}
 @media(max-width:500px){
     .list-of-fleet input[type="radio"]:checked + label + .tab{
        grid-template-columns: 1fr;
@@ -422,6 +416,9 @@ input[type="radio"]:checked + label{
     }
     .svg{
         display: none;
+    }
+    .sidebar{
+        width:80%;
     }
 }
 
