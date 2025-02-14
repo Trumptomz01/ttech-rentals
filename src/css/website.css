@@ -92,7 +92,7 @@ video{
     right: 0;
     padding: 20px 10px;
     z-index: 1008;
-    width:250px;
+    width:300px;
     background-color: rgba(12, 7, 3, 0.5);
     box-shadow: -10px 0 7px rgba(0, 0, 0, 0.2);
     backdrop-filter:blur(10px);
@@ -102,6 +102,11 @@ video{
     align-items: flex-start;
     justify-content: flex-start;
     display: none;
+}
+.sidebar  li{
+    border-bottom: 1px solid #8dd62d58;
+    border-radius: 10px;
+
 }
 .sidebar li:hover{
     background-color:#8dd62d58;
@@ -383,13 +388,10 @@ input[type="radio"]:checked + label{
 @media(max-width:768px){
     .action-div{
         display: block;
-        /* grid-template-columns: 1fr 1fr; */
         grid-template-rows: 1fr 1fr 1fr;
     }
     .para{
         margin: 15px;
-        /* grid-row: 1/span 2; */
-        /* outline: 1px solid red; */
     }
     .book-btn{
         justify-content:start;
@@ -424,7 +426,6 @@ input[type="radio"]:checked + label{
 }
 
 .book-btn{
-    /* outline: 1px solid red; */
     justify-content: end;
     align-items: center;
     margin-left: auto;
@@ -440,7 +441,6 @@ input[type="radio"]:checked + label{
     font-size: 14px;
     align-items: center;
     cursor: pointer;
-    /* box-shadow: 0 4px 8px rgba(0, 255, 0, 0.4), 0 2px 4px rgba(0, 255, 0, 0.2); */
     transition: all 0.3s ease;
     box-shadow: 0 3px 5px rgba(0, 255, 0, 0.3);
     background: #8dd62d;
@@ -453,7 +453,6 @@ input[type="radio"]:checked + label{
     
 }
 .btn:hover{
-    /* background-color: #8df208; */
     color: black;
     box-shadow: 0 4px 6px rgba(0, 255, 0, 0.4);
     transform: translateY(-2px);
@@ -488,7 +487,7 @@ nav ul{
     align-items: center;
 }
 nav li{
-    height: 40px;
+    height: 50px;
 }
 .rent:hover{
     cursor: text;
@@ -527,7 +526,6 @@ a:hover{
     padding: 7px 0;
 }
 .hideOnMobile:hover{
-    /* background-color:#181818; */
     border-radius:15px ;
     height: fit-content;
     transform: translateY(-3px);
