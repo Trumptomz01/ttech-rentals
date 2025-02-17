@@ -46,12 +46,14 @@
     display: block;
 }
 .side-footer ul li{
-    margin: 10px 5px;
+    margin: 20px 5px;
+    list-style: none;
 }
-.side-footer a{
+.side-footer  a{
     color: #cecccc;
     font-size: 14px ;
     text-decoration: none;
+    list-style: none;
 }
 .side-footer a:hover{
     color: #8dd62d;
