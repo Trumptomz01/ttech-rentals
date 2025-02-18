@@ -7,6 +7,8 @@ body{
     background-repeat: no-repeat;
     background-size:cover;
     color:white;
+    font-style: normal;
+    font-weight: 100;
     font-family: 'Inter', sans-serif; 
 }
 .welcome-video{
@@ -73,6 +75,9 @@ body{
 }
 .video-overlay-2{
     display:grid;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-weight: 500;
     background-color: rgba(0, 0, 0, 1);
     position: absolute;
     bottom: 0;
@@ -87,7 +92,6 @@ body{
     padding: 40px 20px;
     transform: translate(-50%, 0%);
     left: 50%;
-    animation-delay: 1.5s;
     animation: slideUp 2.5s ease-out forwards;
     grid-template-columns:repeat(3, 1fr);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
@@ -109,9 +113,13 @@ video{
     z-index: 1000;
 }
 .main{
-    /* background-color: #181818; */
+    background-color: #181818;
     padding: 10px;
     border-radius: 10px;
+    font-style: italic;
+    font-weight: 100;
+    line-height: 20px;
+    font-family: 'Inter', sans-serif;
 }
 nav .sidebar{
     position: fixed;
@@ -231,7 +239,6 @@ hr{
     height: .9px ;
     background-color: #7f7b7b;
     margin: 0rem 1.5rem;
-
 }
 .fleet-msg-div{
     display: grid;
@@ -240,63 +247,6 @@ hr{
     gap: 10px;
     grid-template-columns: 1fr 1fr;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-.list-of-fleet{
-    display: flex;
-    flex-wrap: wrap;
-    padding:  1.5rem;
-    gap: 12px;
-    border-top-left-radius:50px ;
-    border-top-right-radius: 50px ;
-    background:linear-gradient(180deg,#b5afaf, black, black, black );
-    color: black;
-}
-.list-of-fleet input[type="radio"]{
-    display: none;
-    overflow-x: scroll;
-}
-.list-of-fleet label{
-    padding: 3px;
-    cursor: pointer;
-    text-align: center;
-    border: 1px solid rgb(112, 112, 112);
-    background:rgb(196, 194, 194);
-    color:#181818;
-    box-shadow: inset( 0, 0, 0 0.1);
-    border-radius:15px;
-    
-}
-
-
-.list-of-fleet label:hover{
-    background-color: #cec9c9;
-    transition: 0.2s;
-}
-.tab{
-    width: 100%;
-    scrollbar-width: thin;
-    scrollbar-color: transparent transparent;
-    padding: 5px;
-    overflow-y:scroll;
-    height: 300px;
-    display: grid;
-    order: 1;
-    display: none;
-}
-.list-of-fleet input[type="radio"]:checked + label + .tab{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-}
-.space{
-    height: 0px;
-}
-.fleet{
-    position: relative;
-    animation: fade-in linear forwards;
-    animation-timeline: view(280px 130px);
-    scale: .8; opacity: .4;
-    animation-range: contain;
 }
 .gridhome .benz-bg , .lambo-bg , .toyota-bg{
     animation: fade-in linear forwards;
@@ -326,20 +276,14 @@ hr{
 .mobile-fleet-btn{
     display: none;
 }
-input[type="radio"]:checked + label{
-    background:black;
-    color: rgb(236, 230, 230);
-    font-weight: 500;
-}
 @media(max-width:648px) {
     .video-overlay-2{
-        width: 80%;
+        width: 100%;
         grid-template-columns:repeat(3, 1fr);
         transform: translate(-50%, 0%);
     }
     .foot-video-line{
         border-left: 1px solid #8dd62d;
-        /* padding: 0px 5px; */
         display:block;
         flex-direction:row;
         gap: 3px;
@@ -347,16 +291,10 @@ input[type="radio"]:checked + label{
     .first-foot-video-line{
         display: block;
         gap: 3px;
-    
     }
-
 }
 
 @media(max-width:500px){
-    .list-of-fleet input[type="radio"]:checked + label + .tab{
-       grid-template-columns: 1fr;
-       display: grid;
-    }
     .fleet-msg-div{
         display: grid;
         grid-template-columns: 1fr;
