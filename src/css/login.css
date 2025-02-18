@@ -80,7 +80,6 @@ h3{
     color: #e9e3e3;
     font-weight: 300;
     text-align: center;
-    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
 }
 h1{
     text-align: center;
@@ -90,7 +89,6 @@ h1{
     margin-bottom: 15px;
     background-color: black;
     margin-top: 10px;
-    /* max-width: 100%; */
     padding: 15px;
     color: white;
     width:250px;
