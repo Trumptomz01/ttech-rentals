@@ -37,23 +37,33 @@ body{
 }
 .video-overlay{
     padding: 20px;
+    left: -100%;
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 5px;
     height: fit-content;
     position: absolute;
-    top:55px;
+    top:70px;
+    animation: slideIn 2s ease-out forwards;
     margin: 15px;
+}
+@keyframes slideIn {
+    0% {left: - 100%; opacity: 0;}
+    50%{opacity: 0.2;}
+    75%{opacity: 0.6}
+    100% {left:15px; opacity: 1;}
 }
 .foot-video-line{
     border-left: 1px solid #8dd62d;
     padding: 0px 5px;
+    margin: auto;
     display: inline-flex;
     gap: 10px;
 }
 .first-foot-video-line{
     display: inline-flex;
     gap: 10px;
-    padding: 0px 5px;
+    margin: auto;
+    padding: 0px 20px;
 
 }
 .svg{
@@ -63,18 +73,29 @@ body{
 }
 .video-overlay-2{
     display:grid;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 1);
     position: absolute;
     bottom: 0;
-    width: 60%;
+    width: 100%;
     color: #ccc;
+    margin: auto;
     overflow: hidden;
-    border-top-left-radius:20px;
-    border-top-right-radius:20px;
-    padding: 10px 20px;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius:50%;
+    border-top-right-radius:50%;
+    padding: 40px 20px;
     transform: translate(-50%, 0%);
     left: 50%;
+    animation-delay: 1.5s;
+    animation: slideUp 2.5s ease-out forwards;
     grid-template-columns:repeat(3, 1fr);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+@keyframes slideUp {
+    0% {bottom:-100%; opacity: 0;}
+    75%{opacity: 0.5}
+    100% {bottom:0; opacity: 1;}
 }
 video{
     width: 100%;
@@ -313,6 +334,7 @@ input[type="radio"]:checked + label{
 @media(max-width:648px) {
     .video-overlay-2{
         width: 80%;
+        grid-template-columns:repeat(3, 1fr);
         transform: translate(-50%, 0%);
     }
     .foot-video-line{
@@ -499,9 +521,9 @@ nav li{
 } 
 .navbar a{
     display: flex;
-    color:#eef2f7;
+    color:#d7dade;
     height: 100%;
-    padding: 0 21px;
+    padding: 0 30px;
     font-weight: 500;
     align-items: center;
     text-decoration: none;
@@ -529,6 +551,7 @@ a:hover{
 }
 .hideOnMobile{
     padding: 7px 0;
+    font-size: small;
 }
 .hideOnMobile:hover{
     border-radius:15px ;
