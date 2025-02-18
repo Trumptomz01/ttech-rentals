@@ -140,8 +140,7 @@ nav .sidebar{
     display: none;
 }
 .sidebar  li{
-    border-bottom: 1px solid #8dd62d58;
-    
+    border-bottom: 1px solid #00000028;
 }
 .sidebar li:hover{
     border-radius: 10px;
