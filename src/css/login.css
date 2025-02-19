@@ -3,7 +3,7 @@
     margin: 0;
 }
 html{
-    height: 100%;
+    height: 100vh;
 
 }
 body{
@@ -44,6 +44,7 @@ body{
 }
 .container{
     position: absolute;
+    overflow: hidden;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -94,23 +95,6 @@ h1{
     width:250px;
     border-radius: 5px;
     border: none;
-}
-.logo{
-    width:28px;
-    height: 27px;
-}
-.logo3{
-    width: 25px;
-    height: auto;
-
-}
-.logo2{
-    width: 25px;
-    height: auto;
-}
-.logo4{
-    width: 23px;
-    height: auto;
 }
 a{
     text-decoration: none;
@@ -168,14 +152,20 @@ button{
 @media (max-width:430px) {
     body {
         content: "";
+        height: 100%;
         overflow: hidden;
         backdrop-filter: blur(3px);
+    }
+    html{
+        height: 100vh;
+        overflow: hidden;
     }
         a h1{
         font-size: 13px;
     }
     .container{
         border-radius: 0;
+        overflow: hidden;
         width: 100%;
         box-shadow: none;
         backdrop-filter: blur(0px);
