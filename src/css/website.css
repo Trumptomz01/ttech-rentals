@@ -39,20 +39,34 @@ body{
 }
 .video-overlay{
     padding: 20px;
-    left: -100%;
+    left: 50%;
+    top: 50%;
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 5px;
     height: fit-content;
+    max-width: fit-content;
     position: absolute;
-    top:70px;
+    transform: translate(-50%, -50%);
     animation: slideIn 2s ease-out forwards;
-    margin: 15px;
 }
 @keyframes slideIn {
-    0% {left: - 100%; opacity: 0;}
-    50%{opacity: 0.2;}
-    75%{opacity: 0.6}
-    100% {left:15px; opacity: 1;}
+    0% {
+        left: -100%;
+        opacity: 0;
+        transform: translate(0, -50%);
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        left: 50%;
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+    /* 0% {left: - 100%; opacity: 0;}
+    50%{ opacity: 0.2;}
+    75%{ left:5px; opacity: 0.6}
+    100%{ left:100%; transform: translate(50%, 50%);  opacity:1;} */
 }
 .foot-video-line{
     border-left: 1px solid #8dd62d;
@@ -550,7 +564,9 @@ a:hover{
     padding: 7px 0;
     }
     .video-overlay{
-        top:80px;
+       width:80%;
+       max-width: 90%;
+
     }
     .menubutton{
         display: block;
